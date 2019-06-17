@@ -1,33 +1,194 @@
 <!doctype html>
-<html>
-  <head>
-    <title>TradeScope</title>
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-	
-  </head>
-  <body style="background-color: #3f3f3f">
 
-<style>
-.container { 
-  height: 800px;
-  position: relative;
-}
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tradescope</title>
+  <meta name="description" content="Tradescope">
+  <meta name="keywords" content="cryptocurrencies, fair markets, manipulation research">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="tradesco.pe">
+  <link rel="icon" type="image/png" href="img/icon.png" />
 
-.center {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-</style>
+<!--Style-->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-responsive.css">  
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
 
-<div class="container">
-  <div class="center">
-    <img src="tradescope.jpg" class="center">
-  </div>
-</div>
-    
-  </body>
+
+<body>
+
+	<!--Header-->
+	<header class="boxed" id="header-white">
+
+	  <div class="header-margin">
+		<div class="logo" id="full"><a class="ajax-link" href="index.html">&tau;radescope</a></div>
+		<ul class="header-nav">
+		  <li><a class="" href="#papers">Papers</a></li>
+		  <li><a class="" href="#people">People</a></li>
+		  <li><a class="" href="#contact">Contact</a></li>
+		</ul>
+		
+		<ul class="social-icon">
+		  <div class="social-index">
+		  <li><a href="https://twitter.com/TradescopeLabs"><i class="fa fa-twitter"></i></a></li>
+		  </div>
+		</ul>
+		
+	  </div>
+	</header>
+
+	<div class="clear"></div>
+
+	  <!--Content-->
+
+	<div class="content" id="ajax-content">
+		<div class="text-intro" id="research">
+			<h1>Research</h1>
+			<div class="one-column"><p> Market Fairness | Robust Exchange Designs | Manipulation Countermeasures</p>
+			</div>
+			<div class="two-column">
+				<p>	While historically, economists have been primarily occupied with analyzing the behaviour of the markets, electronic 
+					trading gave rise to a new class of unprecedented problems associated with market fairness, transparency and manipulation. 
+					These problems stem from technical shortcomings that are not accounted for in the simple conceptual 
+					models used for theoretical market analysis. They, thus, call for more pragmatic market design methodologies that consider 
+					the various infrastructure complexities and their potential impact on the market procedures. 
+					</br></br>
+					The Tradescope project researches market manipulation techniques, 
+					sources of unfairness and novel exchange designs for 
+					cryptocurrency, equity and forex markets.
+					Unlike the existing finance and legal literature,
+					we treat market abuse as a security problem
+					and focus on technical solutions that have the potential
+					to significantly improve price discovery and thwart unfair practices.
+					Our focus is on fair and robust exchange designs as well as detecting and mitigating manipulation.
+					If you are interested in the area feel free to <a href="#contact">get in touch</a> with us.
+				<p>
+					Tradescope is kindly supported by:</br>
+					<img src="img/logos/binancelabs.png" style="max-height:20%"><a class="ajax-link" href="single.html"></a>
+					<img src="img/logos/ucl.png" style="max-height:20%"><a class="ajax-link" href="single.html"></a>
+				</p>
+			  </div>          
+			</div>
+			
+			<div class="clear"></div>
+			<div class="text-intro" id="papers">
+				<h1>Papers</h1>
+				<h3>Technical Market Manipulation</h3>
+				<div class="two-column">
+					<p>
+						From outcry pits to electronic exchanges, trading has always been a very competitive field, where even the slightest “edge” could be used to gain an advantage
+						over the rest of the market participants. However, electronic trading gave rise to a previously unseen type of manipulation that exploits minor technical details and
+						glitches in the exchange’s infrastructure.</br></br>
+						Our work complements these (legal and finance) research efforts and argues that these phenomena cannot be sufficiently studied without examining their technical component.
+						</br></br>
+						<a href="https://www.threat-arrest.eu/html/eurosec-2019/#programme"> Market Manipulation as a Security Problem: Attacks and Defenses</a> [<a href="https://arxiv.org/abs/1903.12458">PDF</a>]
+						</br>Mavroudis V., 12th European Workshop on Systems Security (EuroSec), March 2019
+					
+					</p>
+				</div>
+				
+				<div class="one-column">
+					  <p><img src="img/projects/eurosec.jpg"><a class="ajax-link" href="single.html"></a></p>
+				</div>
+				
+				<div class="clear"></div>
+				<h3>Fair Order-Matching Policies</h3>
+				<div class="two-column">
+					<p>In this work, we formally define temporal fairness and then explain why it is very difficult for order-matching policies to ensure it in continuous markets.
+					Subsequently, we introduce a list of system requirements and evaluate existing "fair" market designs in various practical and adversarial scenarios. 
+					We conclude that they fail to retain their properties in the presence of infrastructure inefficiencies and sophisticated technical manipulation attacks. 
+					</br></br>
+					Based on these findings, we then introduce Libra, a "fair" policy that is resilient to gaming and technical complications. 
+					Our security analysis shows that it is significantly more robust than existing designs, while Libra's deployment (in a live foreign currency exchange)
+					validated both its considerably low impact on the operation of the market and its ability to reduce speed-based predatory trading.
+					</br></br>
+					Libra: Fair Order Matching for Electronic Financial Exchanges</br>
+					Mavroudis V. & Melton H., Under Submission, May 2019
+					</p>	
+				</div>
+				<div class="one-column">
+					<p><img src="img/projects/ilf.jpg"><a class="ajax-link" href="single.html"></a></p> 
+				</div>
+			</div>
+
+			<div class="clear"></div>
+			<div class="text-intro" id="people">
+				<h1>People</h1>
+				<ul class="portfolio-grid">
+					<li class="grid-item" data-jkit="[show:delay=1000;speed=500;animation=fade]">
+						<img src="img/people/vasilis.jpg">
+						<a class="" href="https://mavroud.is/">  
+						<h3>Vasilios Mavroudis</h3>
+						</a>
+						<p>Doctoral Researcher</p>
+					</li>
+
+					<li class="grid-item" data-jkit="[show:delay=1000;speed=500;animation=fade]">
+						<img src="img/people/sarah.jpg">
+						<a class="" href="https://smeiklej.com/">  
+						<h3>Dr. Sarah Meiklejohn</h3>
+						</a>      
+						<p>Reader in Cryptography and Security</p>
+					</li>
+				</ul>
+			</div>
+
+
+
+			<div class="clear"></div>
+			<div class="text-intro" id="contact">
+				<h1>Contact</h1>
+				<div class="two-column">
+					<p>
+						For more information on the project, please feel free to contact us at:
+						</br></br> 
+						<b>research@tradesco.pe</b>
+						</br></br> 
+						or via post at: 
+						</br></br>  
+						Department of Computer Science</br>  
+						University College London</br>  
+						Gower Street</br>  
+						London WC1E 6BT</br>  
+					</p>
+				</div>
+			</div>
+			
+		<div class="clear"></div>
+		<div id="ajax-sidebar"></div>
+		<footer id="ajax-footer">
+			<div class="footer-margin">
+				<div class="copyright">© Copyright 2019 Tradescope. All Rights Reserved.</div>
+			</div>
+		</footer>
+
+
+	<!--Scripts-->
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.easing.min.js"></script>
+	<script src="js/modernizr.custom.42534.js" type="text/javascript"></script>
+	<script src="js/jquery.waitforimages.js" type="text/javascript"></script>
+	<script src="js/typed.js" type="text/javascript"></script>
+	<script src="js/masonry.pkgd.min.js" type="text/javascript"></script>  
+	<script src="js/imagesloaded.pkgd.min.js" type="text/javascript"></script>    
+	<script src="js/jquery.jkit.1.2.16.min.js"></script>
+	 
+	<script src="js/script.js" type="text/javascript"></script>
+	  
+		<script>
+		$('#button, #buttons').on('click', function() {
+		  $( ".opacity-nav" ).fadeToggle( "slow", "linear" );
+		// Animation complete.
+		});
+	  </script>
+
+</body>
 </html>
