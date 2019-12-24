@@ -50,7 +50,8 @@
 			<div class="one-column"><p> Market Fairness | Robust Exchange Designs | Manipulation Countermeasures</p>
 			</div>
 			<div class="two-column">
-				<p>	While historically, economists have been primarily occupied with analyzing the behaviour of the markets, electronic 
+				<p align="justify">
+					While historically, economists have been primarily occupied with analyzing the behaviour of the markets, electronic 
 					trading gave rise to a new class of unprecedented problems associated with market fairness, transparency and manipulation. 
 					These problems stem from technical shortcomings that are not accounted for in the simple conceptual 
 					models used for theoretical market analysis. They, thus, call for more pragmatic market design methodologies that consider 
@@ -65,7 +66,7 @@
 					to significantly improve price discovery and thwart unfair practices.
 					Our focus is on fair and robust exchange designs as well as detecting and mitigating manipulation.
 					If you are interested in the area feel free to <a href="#contact">get in touch</a> with us.
-				<p>
+				</p><p>
 					Tradescope is kindly supported by:</br>
 					<img src="img/logos/binancelabs.png" style="max-height:20%"><a class="ajax-link" href="single.html"></a>
 					<img src="img/logos/ucl.png" style="max-height:20%"><a class="ajax-link" href="single.html"></a>
@@ -76,9 +77,36 @@
 			<div class="clear"></div>
 			<div class="text-intro" id="papers">
 				<h1>Papers</h1>
+				<h3>Bounded Fairness for FIFO Markets</h3>
+				<div class="two-column">
+					<p align="justify">
+							This work focuses on the market operators’ commitment for fair treatment
+							of all competing participants. We first discuss unbounded temporal fairness and 
+							then investigate its implementation and infrastructure requirements for exchanges. 
+							We find that these requirements can be fully met only under ideal conditions and 
+							argue that unbounded fairness in FIFO markets is unrealistic. To further support 
+							this claim, we analyse several 
+							real-world incidents and show that subtle implementation inefficiencies
+							and technical optimizations suffice to give unfair advantages to a minority of the participants. We finally introduce, ε-fairness, a bounded
+							definition of temporal fairness and discuss how it can be combined with
+							non-continuous market designs to provide equal participant treatment
+							with minimum divergence from the existing market operation.
+						</br></br>
+						
+						<a href="https://www.cl.cam.ac.uk/events/spw/2019/"> Bounded Temporal Fairness for FIFO Financial Markets. </a> [<a href="https://arxiv.org/pdf/1911.09209.pdf">PDF</a>]
+						<br><u>Mavroudis V.</u>, 26th International Workshop on Security Protocols <u>SPW</u>, April 2019
+					
+					</p>
+				</div>
+				
+				<div class="one-column">
+					  <p><img src="img/projects/microstructure.png"><a class="ajax-link" href="single.html"></a></p>
+				</div>
+
+				<div class="clear"></div>
 				<h3>Technical Market Manipulation</h3>
 				<div class="two-column">
-					<p>
+					<p align="justify">
 						From outcry pits to electronic exchanges, trading has always been a very competitive field, where even the slightest “edge” could be used to gain an advantage
 						over the rest of the market participants. However, electronic trading gave rise to a previously unseen type of manipulation that exploits minor technical details and
 						glitches in the exchange’s infrastructure.</br></br>
@@ -97,7 +125,8 @@
 				<div class="clear"></div>
 				<h3>Fair Order-Matching Policies</h3>
 				<div class="two-column">
-					<p>In this work, we formally define temporal fairness and then explain why it is very difficult for order-matching policies to ensure it in continuous markets.
+					<p align="justify">
+					In this work, we formally define temporal fairness and then explain why it is very difficult for order-matching policies to ensure it in continuous markets.
 					Subsequently, we introduce a list of system requirements and evaluate existing "fair" market designs in various practical and adversarial scenarios. 
 					We conclude that they fail to retain their properties in the presence of infrastructure inefficiencies and sophisticated technical manipulation attacks. 
 					</br></br>
